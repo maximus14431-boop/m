@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class ="header-container">
+            <div class="logo">
+                <h1> Dead Tech </h1>
+            </div>
+        <h1> Dead Tech </h1>
+        <p>крутые игры по доступным ценам</p>
+        <p>геймерам </p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#popular">популярные товары</a>
+        <a href="#games of the day">товар дня</a>
+        <a href="#eat">еда</a>
+        <a href="#weak computer">слабый комп</a>
+        <a href="#cart">корзина(<span id="cart-count">0</span>)</a>
+   </nav>
+
+    <main>
+        <h2>О нашем магазине</h2>
+        <p>Dead Tech</p>
+        <p>мы подскажем что вам нужно</p>
+
+
+        <h3>как мы</h3>
+        <ul>
+           <li>мы слепые</li>
+           <li>мы крутые</li>
+           <li>мы глухие</li>
+        </ul>
+        
+
+        <section id="popular">
+            <h2>Популярные товары</h2>
+            <div class="filter-container">
+                <div class="filter-buttons">
+                    <button onclick="filterProducts('all')"class="filter-btn active">все товары</button>
+                    <button onclick="filterProducts('low')"class="filter-btn">до 2000₽</button>
+                    <button onclick="filterProducts('medium')"class="filter-btn"> 2000₽-8000₽</button>
+                    <button onclick="filterProducts('high')"class="filter-btn"> свыше 8000₽</button>
+                </div> 
+            
+            </div>
+
+
+
+            <div>
+                <article class="product-card">
+                    <div class="product-info"> <!-- пробел перед info -->
+                        <img src="dead space.jpg" alt="">
+                        <h3>игра мертвый космос </h3>
+                        <div class="product-footer">
+                            <p class="price">цена: 1000</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-info">
+                        <img src="dead space 2 .jpg" alt="">  
+                        <h3>игра мертвый космос 2</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 1889 </p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card"                            >
+                    <div class="product-info">
+                        <img src="dead space 3 .jpg" alt="">
+                        <h3>игра мертвый космос 3</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 8769 рублей</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article  class="product-card">
+                    <div class="product-info">
+                        <img src="dead space 4 .jpg" alt="">
+                        <h3>игра мертвый космос 4</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 3000 рублей</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div> 
+        </section>
+
+        
+
+
+        </section>
+
+
+        <section id="games of the day">
+            <h3>товар дня</h3>
+            <div>
+                <article class="product-card">
+                    <div class="product-info">
+                        <img src="гта.jpg" alt="">
+                        <h3>игра гта</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 999</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article  class="product-card">
+                     <div class="product-info">
+                        <img src="Dota.jpg" alt="">
+                        <h3>игра дота</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 10000000</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article  class="product-card">
+                     <div class="product-info">
+                        <img src="minecraft.jpg" alt="">
+                        <h3>игра майн крафт</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 1888</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+            </div> 
+        </section> 
+        
+
+
+
+        
+        <section id="eat">
+            <h3>еда</h3>
+            <div>
+                <article class="product-card">
+                     <div class="product-info">
+                        <img src="pizza.jpg" alt="">
+                        <h3>бутерброды</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 999</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article class ="product-card">
+                    <div class="product-info">
+                        <img src="eat.jpg" alt="">
+                        <h3>вкуснятина</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 10000000</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article class ="product-card">
+                    <div class="product-info">
+                        <img src="sushi.jpg" alt="">
+                        <h3>суши</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 1888</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+            </div> 
+        </section>
+        
+        
+        
+        <section id="weak computer">
+            <h3>слабый комп</h3>
+            <div>
+
+                <article class="product-card">
+                    <div class="product-info">
+                        <img src="bs.jpg" alt="">
+                        <h3>задрот</h3>
+                        <div class="product-footer">
+                            <p class="price">цена = 0</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article class ="product-card">
+                    <div class="product-info">
+                        <img src="poker.jpg" alt="">
+                        <h3>нищий</h3>
+                        <div class="product-footer">
+                            <p class="price">цена =99999999</p>
+                            <button class="details-btn" style="display:none;">подробнее</button>
+                            <button class="add-to-cart-btn"> В корзину</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+                    
+
+    </main>
+
+    <section id="cart">
+        <h2>🛒 Корзина</h2>
+        <div id="cart-items">
+            <div class="empty-cart">Корзина пуста</div> <!--был p-->
+        </div>
+
+        <div>
+            <div id="cart-total">
+                <p>Итого: <span id="total-price">0</span>руб.</p>
+                <button onclick="checkout()">оформить заказ</button>
+                <button onclick="clearCart()">очистить корзину</button> <!--была русская а в cart-->
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <p>Dead Tech - твой выбор</p>
+        <p>покупайте у нас</p>
+        <p>ⓒ 2033 Dead Tech. Все права защищены</p>
+    </footer>
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close_modal">&times;</span>
+            <h2>оформление заказа</h2>
+            <form id="order-modal">
+                <div class ="form-group">
+                    <label for="fullname">ФИО*</label>
+                    <input type="text" id="phone" name="phone" placeholder="Введите имя" required>
+                </div>
+                <div class ="form-group">
+                    <label for="fullname">телефон*</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+79637322344" required>
+                </div>
+                <div class ="form-group">
+                    <label for="adress">Адрес*</label>
+                    <textarea id="adress" name="address" rows= "2" required></textarea>
+                </div>
+                <div class ="form-group">
+                    <label for="delivery-time">желаемое время доставки*</label>
+                    <input type="text" id="datetime-local" name="delivery-time">
+                </div>
+                <div class ="form-group">
+                    <label for="delivery-time">номер карты*</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 4567 8901" maxlength="19" required">
+                </div>
+                <div class ="form-actions">
+                    <button type="button" id="cancel-order">ОТМЕНА</button>
+                    <button type="submit">ПОДТВЕРДИТЬ заказ</button>
+
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
